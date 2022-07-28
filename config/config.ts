@@ -1,7 +1,6 @@
 // https://umijs.org/config/
 import { defineConfig } from '@umijs/max';
 import { join } from 'path';
-import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 import routes from './routes';
 
@@ -14,10 +13,16 @@ export default defineConfig({
   initialState: {},
   model: {},
   layout: {
-    // https://umijs.org/zh-CN/plugins/plugin-layout
-    locale: true,
-    siderWidth: 208,
-    ...defaultSettings,
+    navTheme: 'light',
+    primaryColor: '#1890ff',
+    layout: 'top',
+    contentWidth: 'Fluid',
+    fixedHeader: true,
+    fixSiderbar: true,
+    pwa: false,
+    logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+    headerHeight: 56,
+    splitMenus: false,
   },
   // https://umijs.org/zh-CN/plugins/plugin-locale
   locale: {

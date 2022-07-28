@@ -20,6 +20,12 @@
     component: './Welcome',
   },
   {
+    path: '/activities',
+    name: 'activities',
+    icon: 'smile',
+    component: './ActivityList',
+  },
+  {
     path: '/admin',
     name: 'admin',
     icon: 'crown',
